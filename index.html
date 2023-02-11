@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +10,40 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primaryColor: '#FA804C',
+                        headerbgColor: '#FFF9F4',
+
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
+
 <body>
-    
+    <!-- header starts here -->
+    <header>
+        <section class="bg-headerbgColor py-32">
+            <div class="flex justify-center items-center gap-56">
+                <img class="w-1/3" src="images/Group 33092.png" alt="">
+                <div>
+                    <h1 class="uppercase mb-2"><span class="block text-5xl font-extrabold text-primaryColor">Nike
+                            React</span>
+                        <span class="block text-5xl font-extrabold">Infinity Run 2</span>
+                    </h1>
+                    <p class="mb-6">Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry.</p>
+                    <button class="bg-blue-600 px-5 py-3 text-white rounded-lg font-semibold uppercase"><img
+                            class="inline w-7" src="icons/shopping-cart 1.png" alt="">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- header ends here -->
 </body>
+
 </html>
